@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- Links Start -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Links End -->
+</head>
+<body>
+    <header>
+
+        <div class="header-title">
+            
+            <h2> Profit prediction from Startup spendings</h2>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="slider">
+            
+            <h4> Enter the values for credit card defaultion</h4>
+        </div>
+
+        <form method="POST" action="/predict">
+            
+            <div class="input-field" >
+
+          
+
+              <div class="form-group">
+                <label for="LIMIT_BAL">Limit Balance</label>
+                <input type="text" class="form-control" id="LIMIT_BAL" placeholder="Enter the credit limit amount">
+              </div>
+
+              <div class="form-group">
+                <label for="SEX">Sex</label>
+                <input type="text" class="form-control" id="SEX" placeholder="Enter 1 for male, 2 for female">
+              </div>
+
+              <div class="form-group">
+                <label for="EDUCATION">Education</label>
+                <input type="text" class="form-control" id="EDUCATION" placeholder="Enter the education level ">
+                <small id="EDUCATION" class="form-text text-muted">Enter the education level (1=graduate school, 2=university, 3=high school, 4=others)</small>
+              </div>
+
+              <div class="form-group">
+                <label for="MARRIAGE">Marriage</label>
+                <input type="text" class="form-control" id="MARRIAGE" placeholder="Enter 1 for married, 2 for single, 3 for others">
+              </div>
+
+              <div class="form-group">
+                <label for="AGE">Age</label>
+                <input type="text" class="form-control" id="AGE" placeholder="Enter the age of the individual">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_0">Pay 1</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter the repayment status for September">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_2">Pay 2</label>
+                <input type="text" class="form-control" id="PAY_2" placeholder="Enter the repayment status for August">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_3">Pay 3</label>
+                <input type="text" class="form-control" id="PAY_3" placeholder="Enter the repayment status for July">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_4">Pay 4</label>
+                <input type="text" class="form-control" id="PAY_4" placeholder="Enter the repayment status for June">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_5">Pay 5</label>
+                <input type="text" class="form-control" id="PAY_5" placeholder="Enter the repayment status for May">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_6">Pay 6</label>
+                <input type="text" class="form-control" id="PAY_6" placeholder="Enter the repayment status for April">
+              </div>
+
+              <div class="form-group">
+                <label for="BILL_AMT1">Bill Amount 1</label>
+                <input type="text" class="form-control" id="BILL_AMT1" placeholder="Enter the bill amount for September">
+              </div>
+
+              <div class="form-group">
+                <label for="BILL_AMT2">Bill Amount 2</label>
+                <input type="text" class="form-control" id="BILL_AMT2" placeholder="Enter the bill amount for August">
+              </div>
+
+              <div class="form-group">
+                <label for="BILL_AMT3">Bill Amount 3</label>
+                <input type="text" class="form-control" id="BILL_AMT3" placeholder="Enter the bill amount for July">
+              </div>
+
+              <div class="form-group">
+                <label for="BILL_AMT4">Bill Amount 4</label>
+                <input type="text" class="form-control" id="BILL_AMT4" placeholder="Enter the bill amount for June">
+              </div>
+
+              <div class="form-group">
+                <label for="BILL_AMT5">Bill Amount 5</label>
+                <input type="text" class="form-control" id="BILL_AMT5" placeholder="Enter the bill amount for May">
+              </div>
+
+              <div class="form-group">
+                <label for="BILL_AMT6">Bill Amount 6</label>
+                <input type="text" class="form-control" id="BILL_AMT6" placeholder="Enter the bill amount for April">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_AMT1">Payment Anount 1</label>
+                <input type="text" class="form-control" id="PAY_AMT1" placeholder="Enter the payment amount for September">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_AMT2">Payment Anount 2</label>
+                <input type="text" class="form-control" id="PAY_AMT2" placeholder="Enter the payment amount for August">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_AMT3">Payment Anount 3</label>
+                <input type="text" class="form-control" id="PAY_AMT3" placeholder="Enter the payment amount for July">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_AMT4">Payment Anount 4</label>
+                <input type="text" class="form-control" id="PAY_AMT4" placeholder="Enter the payment amount for June">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_AMT5">Payment Anount 5</label>
+                <input type="text" class="form-control" id="PAY_AMT5" placeholder="Enter the payment amount for May">
+              </div>
+
+              <div class="form-group">
+                <label for="PAY_AMT6">Payment Anount 6</label>
+                <input type="text" class="form-control" id="PAY_AMT6" placeholder="Enter the payment amount for April">
+              </div>
+
+              
+            </div>
+            
+            <!-- </div> -->
+            <div class="btn">
+
+                <button type="button" class="btn btn-success">Submit</button>
+            </div>
+        
+        
+        
+        </form>
+    </div>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(glass.jpg);
+}
+header{
+    height: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+}
+h4{
+    text-align: center;
+    
+}
+.input-field{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.form-group{
+    padding: 7px;
+}
+.btn{
+    margin-left: 250px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Profit Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <h1 style="color: blue; text-align: center;">
+            <div>
+                Profit prediction from Startup spendings
+            </div>
+        </h1>
+        <hr >
+        <h2 style="color: black; text-align: center;">
+            <div>
+                Enter the values for credit card defaultion
+            </div>
+        </h2>
+
+        <div style="background-color: white; justify-content: center; padding: 10px; height: 50%; width: 100%;">
+
+            <form method="POST" action="/predict">
+                <table border="5" align="center" width="40%">
+                    <tr>
+            <td>LIMIT_BAL</td>
+            <td><input type="text" name="LIMIT_BAL"></td>
+            <td><small>Enter the credit limit amount</small></td>
+        </tr>
+        <tr>
+            <td>SEX</td>
+            <td><input type="text" name="SEX"></td>
+            <td><small>Enter 1 for male, 2 for female</small></td>
+        </tr>
+        <tr>
+            <td>EDUCATION</td>
+            <td><input type="text" name="EDUCATION"></td>
+            <td><small>Enter the education level (1=graduate school, 2=university, 3=high school, 4=others)</small></td>
+        </tr>
+        <tr>
+            <td>MARRIAGE</td>
+            <td><input type="text" name="MARRIAGE"></td>
+            <td><small>Enter 1 for married, 2 for single, 3 for others</small></td>
+        </tr>
+        <tr>
+            <td>AGE</td>
+            <td><input type="text" name="AGE"></td>
+            <td><small>Enter the age of the individual</small></td>
+        </tr>
+        <tr>
+            <td>PAY_0</td>
+            <td><input type="text" name="PAY_0"></td>
+            <td><small>Enter the repayment status for September</small></td>
+        </tr>
+        <tr>
+            <td>PAY_2</td>
+            <td><input type="text" name="PAY_2"></td>
+            <td><small>Enter the repayment status for August</small></td>
+        </tr>
+        <tr>
+            <td>PAY_3</td>
+            <td><input type="text" name="PAY_3"></td>
+            <td><small>Enter the repayment status for July</small></td>
+        </tr>
+        <tr>
+            <td>PAY_4</td>
+            <td><input type="text" name="PAY_4"></td>
+            <td><small>Enter the repayment status for June</small></td>
+        </tr>
+        <tr>
+            <td>PAY_5</td>
+            <td><input type="text" name="PAY_5"></td>
+            <td><small>Enter the repayment status for May</small></td>
+        </tr>
+        <tr>
+            <td>PAY_6</td>
+            <td><input type="text" name="PAY_6"></td>
+            <td><small>Enter the repayment status for April</small></td>
+        </tr>
+        <tr>
+            <td>BILL_AMT1</td>
+            <td><input type="text" name="BILL_AMT1"></td>
+            <td><small>Enter the bill amount for September</small></td>
+        </tr>
+        <tr>
+            <td>BILL_AMT2</td>
+            <td><input type="text" name="BILL_AMT2"></td>
+            <td><small>Enter the bill amount for August</small></td>
+        </tr>
+        <tr>
+            <td>BILL_AMT3</td>
+            <td><input type="text" name="BILL_AMT3"></td>
+            <td><small>Enter the bill amount for July</small></td>
+        </tr>
+        <tr>
+            <td>BILL_AMT4</td>
+            <td><input type="text" name="BILL_AMT4"></td>
+            <td><small>Enter the bill amount for June</small></td>
+        </tr>
+        <tr>
+            <td>BILL_AMT5</td>
+            <td><input type="text" name="BILL_AMT5"></td>
+            <td><small>Enter the bill amount for May</small></td>
+        </tr>
+        <tr>
+            <td>BILL_AMT6</td>
+            <td><input type="text" name="BILL_AMT6"></td>
+            <td><small>Enter the bill amount for April</small></td>
+        </tr>
+        <tr>
+            <td>PAY_AMT1</td>
+            <td><input type="text" name="PAY_AMT1"></td>
+            <td><small>Enter the payment amount for September</small></td>
+        </tr>
+        <tr>
+            <td>PAY_AMT2</td>
+            <td><input type="text" name="PAY_AMT2"></td>
+            <td><small>Enter the payment amount for August</small></td>
+        </tr>
+        <tr>
+            <td>PAY_AMT3</td>
+            <td><input type="text" name="PAY_AMT3"></td>
+            <td><small>Enter the payment amount for July</small></td>
+        </tr>
+        <tr>
+            <td>PAY_AMT4</td>
+            <td><input type="text" name="PAY_AMT4"></td>
+            <td><small>Enter the payment amount for June</small></td>
+        </tr>
+        <tr>
+            <td>PAY_AMT5</td>
+            <td><input type="text" name="PAY_AMT5"></td>
+            <td><small>Enter the payment amount for May</small></td>
+        </tr>
+        <tr>
+            <td>PAY_AMT6</td>
+            <td><input type="text" name="PAY_AMT6"></td>
+            <td><small>Enter the payment amount for April</small></td>
+        </tr>
+            <tr>
+                <td></td>
+                <td class="btn"><button type="button" class="btn btn-success">Success</button></td>
+                <td></td>
+            </tr>
+            
+            
+        </table>
+        </form>
+
+    </div>
+
+    </body>
+
+</head>
+</html>
